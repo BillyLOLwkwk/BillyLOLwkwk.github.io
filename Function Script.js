@@ -10,12 +10,12 @@ function onCreateCard(imageName, name, gender) {
     document.getElementById("mulai-foto").innerHTML +=
       `
   <div class="col-md-3 mb-3" data-aos="flip-left">
-    <div class="card">
+    <div class="card top-50 start-50 translate-middle">
       <img src=
   ` +
       imageName +
       `  
-      class="card-img-top" alt=
+      class="mx-auto card-img-top" alt=
     ` +
       name +
       `
@@ -36,12 +36,12 @@ function onCreateCard(imageName, name, gender) {
     document.getElementById("mulai-foto").innerHTML +=
       `
   <div class="col-md-3 mb-3" data-aos="flip-left">
-    <div class="card">
+    <div class="card top-50 start-50 translate-middle">
       <img src=
   ` +
       imageName +
       `  
-      class="card-img-top" alt=
+      class="mx-auto card-img-top" alt=
     ` +
       name +
       `
