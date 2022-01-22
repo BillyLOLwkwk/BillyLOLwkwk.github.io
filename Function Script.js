@@ -9,7 +9,7 @@ function onCreateCard(imageName, name, gender) {
   if (gender === "lk") {
     document.getElementById("mulai-foto").innerHTML +=
       `
-  <div class="col-md-3 mb-3" data-aos="flip-left">
+  <div class="col-sm-3 mb-3" data-aos="flip-left">
     <div class="card top-50 start-50 translate-middle">
       <img src=
   ` +
@@ -35,7 +35,7 @@ function onCreateCard(imageName, name, gender) {
   else {
     document.getElementById("mulai-foto").innerHTML +=
       `
-  <div class="col-md-3 mb-3" data-aos="flip-left">
+  <div class="col-sm-3 mb-3" data-aos="flip-left">
     <div class="card top-50 start-50 translate-middle">
       <img src=
   ` +
