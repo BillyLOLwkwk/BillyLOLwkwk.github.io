@@ -15,7 +15,7 @@ function onCreateCard(imageName, name, gender) {
   ` +
       imageName +
       `  
-      class="card-img-top-fluid" alt=
+      class="card-img-top" alt=
     ` +
       name +
       `
@@ -41,7 +41,7 @@ function onCreateCard(imageName, name, gender) {
   ` +
       imageName +
       `  
-      class="card-img-top-fluid" alt=
+      class="card-img-top" alt=
     ` +
       name +
       `
