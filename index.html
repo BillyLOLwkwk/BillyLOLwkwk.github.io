@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css" />
+
+    <!-- Aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Billy's CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Function Program -->
+    <script src="Function Script.js"></script>
+
+    <title>Angkatan SMPN 2 KOTA DUMAI</title>
+  </head>
+  <body id="home">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow-lg fixed-top" style="background-color: #e69f07ef">
+      <div class="container">
+        <a class="navbar-brand" href="#">Billy kun :)</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#foto-foto">Foto-Foto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact saya">Contact Kami</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Jumbotron -->
+    <section class="jumbotron text-center">
+      <img src="img/Bu Defi.jpg" alt="BU DEFI" width="150" class="rounded-circle img-thumbnail" data-aos="fade-in" />
+      <h1 class="display-4">DEFI SUSANTI S.PD</h1>
+      <p class="lead"></p>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,192L80,186.7C160,181,320,171,480,181.3C640,192,800,224,960,213.3C1120,203,1280,149,1360,122.7L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Akhir Jumbortron-->
+
+    <!-- About -->
+    <section id="about">
+      <div class="container" data-aos="fade-down">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h1>Tentang Kami</h1>
+          </div>
+        </div>
+        <div class="row justify-content-center fs-5 text-center">
+          <div class="col-md-4 mb-3" data-aos="fade-right">
+            <h5>Kelas 8.10 SMPN 2 DUMAI Adalah Kelas Unggul Yang Memiliki Siswa-Siswi Berprestasi Dalam Segala Bidang Dan Aktif Dalam Mengikuti Lomba - Lomba</h5>
+          </div>
+          <div class="col-md-4 mb-3" data-aos="fade-left" data-aos-delay="250">
+            <h5>tidak tau lagi mau bilang apa :3</h5>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#f3cec2"
+          fill-opacity="1"
+          d="M0,32L48,37.3C96,43,192,53,288,69.3C384,85,480,107,576,112C672,117,768,107,864,117.3C960,128,1056,160,1152,154.7C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Akhir About -->
+
+    <!-- Foto-Foto Siswa-->
+    <section id="foto-foto">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h1>Foto - Foto Siswa 8.10</h2>
+          </div>
+        </div>
+        <div id="mulai-foto" class="row justify-content-evenly" data-aos="flip-left" data-aos-delay="200">
+          <script>
+            //untuk input foto sudah diganti di dalam Function Script.js dan semua penambahan foto dilakukan disini
+            onCreateCard('Nabilah.png', 'Nabilah', 'pr')
+            onCreateCard('Daffa.png', 'Daffa', 'lk')
+            onCreateCard("Hidayat.png", "Hidayat", 'lk')
+            onCreateCard('Billy.png', 'Billy', 'lk')
+            onCreateCard('Reyhan.png', 'Reyhan', 'lk')
+            onCreateCard('Rara.png', 'Rara', 'pr')
+            onCreateCard('Sandiego.png', 'Sandiego', 'lk')
+            onCreateCard('Agustin.png', 'Agustin', 'pr')
+            onCreateCard('Alip.png', 'Alip', 'lk')
+            onCreateCard('Fadhlin.png', 'Fadhlin', 'lk')
+            onCreateCard('Eka.png', 'Eka', 'pr')
+            onCreateCard('Satria.png', 'Satria', 'lk')
+            onCreateCard('Wawa.png', 'Wawa', 'pr')
+            onCreateCard('Sharen.png', 'Sharen', 'lk')
+            onCreateCard('Haniya.png', 'Haniya', 'pr')
+          </script>          
+          <!-- tambah foto baru mulai dari atas ini-->
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#f3f4f5"
+          fill-opacity="1"
+          d="M0,32L40,58.7C80,85,160,139,240,160C320,181,400,171,480,181.3C560,192,640,224,720,224C800,224,880,192,960,202.7C1040,213,1120,267,1200,277.3C1280,288,1360,256,1400,240L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Akhir Foto-Foto Siswa -->
+
+    <!-- Contact -->
+    <section id="contact saya">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <h2>Kontak Kami</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center mb-3">
+          <div class="col-md-8">
+            <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+              <strong>Terimakasih!</strong> Pesan Anda Sudah Kami Terima.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <form name="Papah-Contact-Form">
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Alamat Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Pesan</label>
+                <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-kirim" style="background-color: #e69f07ce">Kirim</button>
+
+              <button class="btn btn-primary btn-loading d-none" type="button" style="background-color: #e69f07ce" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
+            </form>
+          </div>
+          <h4 class="text-center text-success">Whatsapp <i class="bi bi-whatsapp"></i> <span class="badge bg-success">+62 822-8414-9313</span></h4>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#e69f07ce"
+          fill-opacity="1"
+          d="M0,256L60,245.3C120,235,240,213,360,208C480,203,600,213,720,202.7C840,192,960,160,1080,154.7C1200,149,1320,171,1380,181.3L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Akhir Contact-->
+
+    <!-- Footer -->
+    <footer class="text-white text-center pb-2" style="background-color: #e69f07ce">
+      <p>Created By <i class="bi bi-heart-fill text-danger"></i><u class="text-light fw-bold"> Billy(Leader / Programmer) & Echa(Logo Designer)</u></p>
+    </footer>
+    <!-- Akhir Footer -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/TextPlugin.min.js"></script>
+
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to(".lead", { duration: 2, delay: 1, text: "WALI KELAS 8.10 SMPN 2 DUMAI" });
+      gsap.from(".navbar", { duration: 1.5, y: -125, opacity: 0, ease: "bounce" });
+      gsap.from(".display-4", { duration: 1, x: -100, opacity: 0, ease: "back" });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- script contact form -->
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbwb9jy2f9K6P1OLJZJVHBjz9Jp5i3Bd1kBgZFGLcn17cYvTPuUWgFB2O29PwJf2aPui/exec";
+      const form = document.forms["Papah-Contact-Form"];
+      const btnKirim = document.querySelector(".btn-kirim");
+      const btnLoading = document.querySelector(".btn-loading");
+      const myAlert = document.querySelector(".my-alert");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        // ketika tombol submit diklik
+        //tampilkan tombol loading, hilangan tombol kirim
+        btnLoading.classList.toggle("d-none");
+        btnKirim.classList.toggle("d-none");
+
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            // tampilkan tombol kirim, hilangkan tombol loading
+            btnLoading.classList.toggle("d-none");
+            btnKirim.classList.toggle("d-none");
+            // tampilkan allert
+            myAlert.classList.toggle("d-none");
+            // reset formnya bro...
+            form.reset();
+
+            console.log("Success!", response);
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <!-- Akhir Script Contact Form-->
+  </body>
+  
+</html>
+
+<!-- CATATAN PENTING
+  => JANGAN PERNAH GANTI NAMA FILE APAPUN *(kecuali file index.html) DAN JANGAN PERNAH GANTI NAMA EXTENSI FILE ATAU WEB TIDAK AKAN BERJALAN
+  => SEMUA SOURCE CODE DIAMBIL DARI LIBRARY BOOTSTRAPS 
+  => JANGAN PERNAH MENGEDIT SCRIPT CONTACT FORM *(soalnya bikinnya susah)
+  => SEMUA CSS JANGAN DIGANTI *(kalau mau nambah gpp kok, asalkan ngerti)
+  => Jaangan mengedit script apapun secara sembarang kecuali anda mengerti apa yang anda edit
+  => Jika ingin mengedit atau menambahkan fitur silahkan ae, tapi ingat jangan ganti creditnya :), kalau mau nambah boleh aja
+  => Format foto bisa apa saja dan rasionya HARUS 1 : 1 *(14 rem)
+  => Semua script akan langsung berjalan secara otomatis dan responsive terhadap layar apapun.
+  => Mengganti ukuran "card" terdapat pada style.css *(bagian .card)
+-->
