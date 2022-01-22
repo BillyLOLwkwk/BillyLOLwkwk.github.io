@@ -15,7 +15,7 @@ function onCreateCard(imageName, name, gender) {
   ` +
       imageName +
       `  
-      class="card-img-top" alt=
+      class="card-img-top-fluid" alt=
     ` +
       name +
       `
@@ -31,7 +31,7 @@ function onCreateCard(imageName, name, gender) {
     </div>
   </div>
   `;
-  } // jika input gender tidak ada, otomatis akan membuat logo gender perempuan 
+  } // jika input gender tidak ada, otomatis akan membuat logo gender perempuan
   else {
     document.getElementById("mulai-foto").innerHTML +=
       `
@@ -41,7 +41,7 @@ function onCreateCard(imageName, name, gender) {
   ` +
       imageName +
       `  
-      class="card-img-top" alt=
+      class="card-img-top-fluid" alt=
     ` +
       name +
       `
