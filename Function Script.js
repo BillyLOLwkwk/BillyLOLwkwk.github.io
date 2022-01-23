@@ -9,34 +9,34 @@ function onCreateCard(imageName, name, gender) {
   if (gender === "lk") {
     document.getElementById("mulai-foto").innerHTML +=
       `
-  <div class="col-sm-3 mb-3" data-aos="flip-left">
-    <div class="card top-50 start-50 translate-middle">
-      <img src=
-  ` +
+    <div class="col-lg-3 mb-3" data-aos="flip-left">
+      <div class="card border-info">
+        <img src=
+    ` +
       imageName +
       `  
-      class="mx-auto card-img-top" alt=
-    ` +
+        class="mx-auto card-img-top" alt=
+      ` +
       name +
       `
-      />
-      <div class="card-body">
-        <h5 class="card-title text-center">
-        ` +
+        />
+        <div class="card-body">
+          <h5 class="card-title text-center">
+          ` +
       name +
       `
-        <img src="img/lk.jpeg" width= 25 class='rounded'/></h5>
-        <p class="card-text"></p>
+          <img src="img/lk.jpeg" width= 25 class='rounded'/></h5>
+          <p class="card-text"></p>
+        </div>
       </div>
     </div>
-  </div>
-  `;
+    `;
   } // jika input gender tidak ada, otomatis akan membuat logo gender perempuan
   else {
     document.getElementById("mulai-foto").innerHTML +=
       `
-  <div class="col-sm-3 mb-3" data-aos="flip-left">
-    <div class="card top-50 start-50 translate-middle">
+  <div class="col-lg-3 mb-3" data-aos="flip-left">
+    <div class="card border-danger">
       <img src=
   ` +
       imageName +
