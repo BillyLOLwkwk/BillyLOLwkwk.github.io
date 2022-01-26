@@ -26,7 +26,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light shadow-lg fixed-top" style="background-color: #e69f07ef">
       <div class="container">
-        <a class="navbar-brand" href="#">Billy kun :)</a>
+        <a class="navbar-brand" href="#">Billy kun :1</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -39,7 +39,10 @@
               <a class="nav-link" href="#about">Tentang</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#foto-foto">Foto-Foto</a>
+              <a class="nav-link" href="#carouselExampleDark">Foto Pembelajaran</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#foto-foto">Foto Siswa</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact saya">Contact Kami</a>
@@ -52,7 +55,7 @@
 
     <!-- Jumbotron -->
     <section class="jumbotron text-center">
-      <img src="img/Bu Defi.jpg" alt="BU DEFI" width="150" class="rounded-circle img-thumbnail" data-aos="fade-in" />
+      <img src="img/card/Bu Defi.jpg" alt="BU DEFI" width="150" class="rounded-circle img-thumbnail" data-aos="fade-in" />
       <h1 class="display-4">DEFI SUSANTI S.PD</h1>
       <p class="lead"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -91,8 +94,34 @@
       </svg>
     </section>
     <!-- Akhir About -->
+    
+    <!-- Slide -->
+    <div class="row text-center" style='background-color:#f3cec2'>
+      <div class="col">
+        <h1>Foto - Foto Pembelajaran Siswa 8.10</h2>
+      </div>
+    </div>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div id='button-slide' class="carousel-indicators">
+      </div>
+      <div id='mulai-slide'class="carousel-inner">
+        <script>
+          onAddSlide('Pembelajaran_IPA.jpeg', 'Pembelajaran IPA', 'Pelaksanaan Eksperiman IPA Bersama Pak Landra Dalam Menentukan Tekanan Pada Air', 1)
+          // fungsi onAddSlide masih dalam pengembangan, jadi jangan ngeluh kalau urutan 2 sampai selanjutnya gk bisa bruh
+        </script>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Akhir Slide-->
 
-    <!-- Foto-Foto Siswa-->
+    <!-- Foto-Foto Siswa -->
     <section id="foto-foto" >
       <div class="container">
         <div class="row text-center mb-5">
@@ -185,8 +214,8 @@
 
     <!-- Footer -->
     <footer class="text-white text-center pb-2" style="background-color: #e69f07ce">
-      <p>Created With <i class="bi bi-heart-fill text-danger"></i> By</p>
-      <p class="text-light fw-bold"><u>Billy(Leader & Programmer) </u></p>
+      <p>Created By</p>
+      <p class="text-light fw-bold"><u>Billy(Leader & Programmer)</u></p>
       <u class="text-light fw-bold"> Echa(Logo Designer) </u>
       <u class="text-light fw-bold"> Nabilah(Helping & WEB Tester) </u>
     </footer>

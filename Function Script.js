@@ -5,7 +5,7 @@ function onCreateCard(imageName, name, gender) {
   gender => ya gender, lk => laki laki, pr => perempuan
   */
   // JIKA MENGUBAH NAMA FOLDER UNTUK FOTO, GANTI JUGA NAMA FOLDER UNTUK DIBAWAH
-  imageName = "img/" + imageName;
+  imageName = "img/card/" + imageName;
   if (gender === "lk") {
     document.getElementById("mulai-foto").innerHTML +=
       `
@@ -60,9 +60,75 @@ function onCreateCard(imageName, name, gender) {
   }
 }
 
+function onAddSlide(imageName, judul, deskripsi, urutan) {
+  // deskripsi bisa berisi kosong tetapi tetap harus dibuat
+  // rasio photo 720 : 1200 atau sejenis nya
+  imageName = "img/slide/" + imageName;
+  if (urutan == 1) {
+    document.getElementById("button-slide").innerHTML += `<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    `;
+
+    document.getElementById("mulai-slide").innerHTML +=
+      `
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src=` +
+      imageName +
+      ` class="d-block w-100" alt=
+    ` +
+      judul +
+      `>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>
+        ` +
+      judul +
+      `</h5>
+        <h6>
+        ` +
+      deskripsi +
+      `</h6>
+      </div>
+    </div>
+    `;
+  } else {
+    document.getElementById("button-slide").innerHTML +=
+      `<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to=
+    ` +
+      (urutan - 1).toArray() +
+      ` aria-label="Slide 
+      ` +
+      urutan.toArray() +
+      `"></button>
+    `;
+
+    document.getElementById("mulai-slide").innerHTML +=
+      `
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src=
+` +
+      imageName +
+      ` class="d-block w-100" alt=
+    ` +
+      imageName +
+      `>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>
+        ` +
+      judul +
+      `</h5>
+        <p>
+        ` +
+      deskripsi +
+      `</p>
+      </div>
+    </div>
+    `;
+  }
+}
+
 /* CARA MENGGUNAKAN
-1. Semua input harus berupa array *(penggunaan dalam html)
-  Contoh: onCreateCard('Salwa', 'Salwa')
+1. Semua input dibuka dan ditutup dengan tanda kutip 2 / 1 *(penggunaan dalam html) *(kecuali dalam beberapa hal, keterangan ada dalam setiap fungsi)
+  Contoh: onCreateCard('Salwa', "Salwa", 'pr')
+          onAddSlide('Pembelajaran IPA.jpeg', 'Pembelajaran IPA', "ipa nih bos hai hai", "2")
 2. Jangan mengedit sciprt apapun yang ada diatas kecuali anda tau apa yang anda buat
 3. Dipersilahkan menambahkan input baru asalkan anda mengerti apa yang anda buat
 4. Kesederhanaan program akan diusahakan
